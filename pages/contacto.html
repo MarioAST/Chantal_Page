@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Chantal Estilo</title>
+  <meta name="description" content="Escríbenos para pedidos, citas y colaboraciones con Chantal Estilo.">
+  <link rel="icon" type="image/svg+xml" href="../img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ========== ENCABEZADO ========== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__barra">
+      <a href="../index.html" class="logo" aria-label="Chantal Estilo, inicio">
+        <img src="../img/logo.svg" alt="">
+        <span class="logo__texto">CHANTAL<small>Estilo</small></span>
+      </a>
+      <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#coleccion">Colección</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="cinta"></div>
+  </header>
+
+  <main>
+    <section class="pagina-titulo">
+      <div class="contenedor">
+        <span class="etiqueta">Hablemos</span>
+        <h1>Contacto</h1>
+        <p>Pedidos, citas de diseño a la medida o colaboraciones: nos encantará saber de ti.</p>
+      </div>
+    </section>
+    <div class="cinta cinta--gruesa"></div>
+
+    <!-- ========== CUERPO: DATOS Y FORMULARIO ========== -->
+    <section class="seccion">
+      <div class="contenedor contacto">
+        <div class="contacto__datos aparece">
+          <span class="etiqueta">Estamos para ti</span>
+          <h2>Cuéntanos qué imaginas</h2>
+          <p>Escríbenos y Chantal te responderá personalmente en un máximo de 48 horas.</p>
+          <ul>
+            <li><span class="ico"><i>✉</i></span><div><small>Correo</small>hola@chantalestilo.mx</div></li>
+            <li><span class="ico"><i>☎</i></span><div><small>Teléfono / WhatsApp</small>+52 55 0000 0000</div></li>
+            <li><span class="ico"><i>⌂</i></span><div><small>Atelier</small>Ciudad de México, México<br>Visitas con cita previa</div></li>
+            <li><span class="ico"><i>◷</i></span><div><small>Horario</small>Lunes a sábado · 10:00 a 19:00 h</div></li>
+          </ul>
+        </div>
+
+        <form class="formulario aparece" id="form-contacto">
+          <div class="fila">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="campo">
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" name="correo" required placeholder="tucorreo@ejemplo.com">
+            </div>
+          </div>
+          <div class="fila">
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+            </div>
+            <div class="campo">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option>Información de colección</option>
+                <option>Diseño a la medida</option>
+                <option>Pedido especial</option>
+                <option>Colaboración</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué estás buscando..."></textarea>
+          </div>
+          <button type="submit" class="boton boton--oscuro">Enviar mensaje</button>
+          <div class="mensaje-exito" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== DESPEDIDA ========== -->
+  <footer class="despedida">
+    <div class="cinta cinta--gruesa"></div>
+    <div class="contenedor">
+      <div class="despedida__mensaje">
+        <h2>Gracias por escribirnos</h2>
+        <p>Hasta pronto · Chantal Estilo</p>
+      </div>
+      <div class="despedida__columnas">
+        <div>
+          <h4>Chantal Estilo</h4>
+          <p>Moda elegante con raíces mexicanas y alma huichol.</p>
+        </div>
+        <div>
+          <h4>Explora</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#coleccion">Colección</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>hola@chantalestilo.mx</li>
+            <li>+52 55 0000 0000</li>
+            <li>Ciudad de México</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="despedida__legal">© <span data-anio>2026</span> Chantal Estilo. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
