@@ -1,3 +1,4 @@
+
 name: Deploy static content to Pages
 
 on:
@@ -12,14 +13,13 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-running: false
+  cancel-in-progress: false
 
 jobs:
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-order: ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
